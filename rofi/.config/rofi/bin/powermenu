@@ -90,15 +90,16 @@ case $chosen in
         fi
         ;;
     $lock)
-        sh $HOME/.local/bin/lock
+			sh $HOME/.config/i3lock/lock.sh
         ;;
     $suspend)
 		ans=$(rdialog &)
 		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
 			mpc -q pause
-			amixer set Master mute
-			sh $HOME/.local/bin/lock
-			systemctl suspend
+			# amixer set Master mute
+			# sh $HOME/.local/bin/lock
+			sh $HOME/.config/i3lock/lock.sh
+      systemctl suspend
 		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
 			exit
         else
