@@ -163,7 +163,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 #bindsym $mod+Shift+e exec i3-msg exit
-bindsym $mod+Shift+e exec --no-startup-id ~/.config/rofi/powermenu/powermenu.sh
+# bindsym $mod+Shift+e exec --no-startup-id ~/.config/rofi/powermenu/powermenu.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -187,6 +187,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+p exec /home/maksym/.config/i3/test.sh
 #smart_borders on
 #smart_borders no_gaps
 #border_radius 30
@@ -232,7 +233,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 exec --no-startup-id xrandr --auto
 exec --no-startup-id picom --daemon --backend glx
 exec_always --no-startup-id ~/.fehbg
-exec --no-startup-id xss-lock ~/.config/i3lock/lock.sh
+# exec --no-startup-id xss-lock ~/.config/i3lock/lock.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec --no-startup-id systemctl --user start redshift-gtk
 exec_always --no-startup-id i3-msg gaps inner all set 10

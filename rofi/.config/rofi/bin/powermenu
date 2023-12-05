@@ -90,15 +90,17 @@ case $chosen in
         fi
         ;;
     $lock)
+      setxkbmap us
 			sh $HOME/.config/i3lock/lock.sh
-        ;;
+      setxkbmap -layout us,ua -option grp:alt_shift_toggle
+      ;;
     $suspend)
 		ans=$(rdialog &)
 		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
 			mpc -q pause
 			# amixer set Master mute
 			# sh $HOME/.local/bin/lock
-			sh $HOME/.config/i3lock/lock.sh
+			# sh $HOME/.config/i3lock/lock.sh
       systemctl suspend
 		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
 			exit
