@@ -414,7 +414,7 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
 " Open file in existing instance of gvim
-nnoremap o :!nvim %f<cr>
+nnoremap o :!helix %f<cr>
 " Open file in new instance of gvim
 nnoremap O :!nvim %f<cr>
 
