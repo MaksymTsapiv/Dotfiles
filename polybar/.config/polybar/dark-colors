@@ -1,0 +1,31 @@
+; vim:ft=dosini
+
+#Nord colors
+#[colors]
+#background = #2E3440
+#buffer = #4c566a
+#foreground = #D8DEE9
+#nord6 = #ECEFF4
+#nord7 = #8FBCBB
+#nord8 = #88C0D0
+#nord9 = #81A1C1
+#urgent = #BF616A
+#warning = #D08770
+#notify = #EBCB8B
+#success = #A3BE8C
+#function = #B48EAD
+
+#Catppuccin-Macchiato colors
+[colors]
+background = #24273A
+buffer = #6E738D
+foreground = #CAD3F5
+nord6 = #ECEFF4
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+urgent = #BF616A
+warning = #ED8796
+notify = #EED49F
+success = #A6DA95
+function = #C6A0F6
